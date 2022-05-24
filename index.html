@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+</head>
+
+<body>
+  <section class="container">
+    <div class="nav">
+      <h2>Welcome to the Countdown Launcher App
+      </h2>
+
+      <a class="input-btn btn--show-modal" href="#">Get Started</a>
+    </div>
+
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Please enter your Event date and Event name.
+      </h2>
+      <form class="modal__form">
+        <label>Month:</label>
+        <input type="text" class="month-select"/>
+        <label>Day(00):</label>
+        <input type="number" class="day-select"/>
+        <label>Year:</label>
+        <input type="number" class="year-select"/>
+        <label>Event Name:</label>
+        <input type="text" class="event-name" />
+        <button class="btn">Enter &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="countdown" id="countdown"></div>
+
+  </section>
+
+
+  <footer>
+    <div class="icons">
+      <img class="icon icon-visited" src="/images/icon-facebook.svg" alt="icon-facebook">
+      <img class="icon" src="/images/icon-pinterest.svg" alt="icon-pinterest">
+      <img class="icon" src="/images/icon-instagram.svg" alt="icon-instagram">
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">CodeBstack</a>.
+    </div>
+  </footer>
+
+  <script src="countdown.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
