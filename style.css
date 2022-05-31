@@ -22,7 +22,7 @@ html {
       align-items: center;
       height: 80vh;
       width: 100%;
-      background-image: linear-gradient(rgba(35, 29, 43, 1), rgba(35, 29, 43, 1) ), url("/images/bg-stars.svg");
+      background-image: linear-gradient(rgba(35, 29, 43, 1), rgba(35, 29, 43, 1) ), url("./images/bg-stars.svg");
       background-size: cover;
       background-position: center;
   }
@@ -100,7 +100,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/images/pattern-hills.svg");
+    background-image: url("./images/pattern-hills.svg");
     background-size: cover;
     background-position: center;
 }
