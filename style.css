@@ -55,12 +55,18 @@ html {
       font-weight: 400;
   }
 
+  .title h2 {
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    margin-left: 12px;
+  }
+
   .countdown{
       width: 100%;
       display: flex;
       justify-content: center;
       flex-direction: row;
-      margin: 50px;
+      /* margin: 50px; */
   }
   
   .components{
@@ -203,18 +209,50 @@ footer .icon{
   }
 
 
+  @media only screen and (max-width: 800px){
+    .components{
+      font-size: 40px;
+    }
+    .countdown{
+      margin: 30px 30px 50px 0px ;
+  }
+  .container .nav{
+    flex-direction: column;
+    margin-top: -100px;
+  }
+  .nav h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .container .nav a{
+    text-align: center;
+    /* padding: ; */
+    margin: 0 30px;
+  }
+
+  .title{
+    margin-top: 120px;
+  }
+  .title h2{
+    margin-left: 30px;
+    font-size: 30px;
+  }
+  
+  }
 
   @media only screen and (max-width: 500px){
     .components{
       font-size: 23px;
     }
     .countdown{
-      margin: 100px 30px 50px 30px ;
+      margin: 30px 30px 50px 0px ;
   }
   .container .nav{
     flex-direction: column;
+    margin-top: -80px;
   }
-  .container h2{
+  .nav h2{
     text-align: center;
     margin-bottom: 30px;
   }
@@ -222,6 +260,10 @@ footer .icon{
     text-align: center;
     /* padding: ; */
     margin: 0 30px;
+  }
+
+  .title{
+    margin-top: 100px;
   }
   .modal{
     padding: 0;
@@ -249,3 +291,12 @@ footer .icon{
   }
   
   }
+
+  @media only screen and (max-width: 400px){
+    .container .nav{
+      flex-direction: column;
+      margin-top: 0px;
+    }
+  
+  }
+

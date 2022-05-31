@@ -3,7 +3,6 @@
 class CountDown {
     constructor(expiredDate, onRender, onComplete) {
         this.setExpiredDate(expiredDate);
-
         this.onRender = onRender;
         this.onComplete = onComplete;
     }
@@ -11,19 +10,18 @@ class CountDown {
     setExpiredDate(expiredDate) {
         //to get cur time
         const curTime = new Date().getTime();
-        console.log(curTime);
+        // console.log(curTime);
 
         // to calculate the remaining time
         this.timeRemaining = expiredDate - curTime;
-        console.log(this.timeRemaining);
-        if (this.timeRemaining > 0) {
+        this.timeRemaining > 0 ?
+            this.start() :
             this.complete();
-            this.start();
-        }
     }
 
     complete() {
         if (typeof this.onComplete === 'function') {
+            // console.log(typeof this.onComplete)
             onComplete();
         }
     }
@@ -52,19 +50,17 @@ class CountDown {
             //update timer
             this.timeRemaining -= 1000;
 
-            if (this.timeRemaining < 0) {
+            if (this.timeRemaining <= 0) {
                 //call the complete function
                 complete();
 
-                //also clear the interval to validate ecpire
+                //also clear the interval to validate expire
                 clearInterval(intervalSet);
             } else {
                 this.update();
             }
         }, 1000)
     }
-
-
 }
 
 
